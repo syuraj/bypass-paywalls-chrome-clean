@@ -1,0 +1,120 @@
+{
+  "Business Insider": {
+    "domain": "businessinsider.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.sophi\\.io",
+    "useragent_custom": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+    "upd_version": "3.8.9.7"
+  },
+  "Die Rheinpfalz": {
+    "domain": "rheinpfalz.de",
+    "allow_cookies": 1,
+    "block_regex": "\\.piano\\.io",
+    "useragent": "googlebot",
+    "upd_version": "3.8.7.4"
+  },
+  "Evolok WordPress": {
+    "domain": "###_wp_evolok",
+    "allow_cookies": 1,
+    "block_regex_general": "\\/evolok\\/.+\\/ev-(em|widgets)\\.min\\.js",
+    "excluded_domains": ["vikatan.com"],
+    "upd_version": "3.8.7.7"
+  },
+  "Frankfurter Allgemeine Zeitung": {
+    "domain": "faz.net",
+    "allow_cookies": 1,
+    "useragent": "googlebot",
+    "upd_version": "3.8.8.7"
+  },
+  "Handelsblatt": {
+    "domain": "handelsblatt.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.piano\\.io",
+    "useragent": "googlebot",
+    "cs_code": "[{\"cond\":\"html[class]\", \"rm_attrib\":\"class\"}, {\"cond\":\"div[id^='sp_message_container_']\", \"rm_elem\":1}]",
+    "upd_version": "3.8.7.3"
+  },
+  "Interesting Engineering": {
+    "domain": "interestingengineering.com",
+    "allow_cookies": 1,
+    "cs_code": "[{\"cond\":\"div.paywall-main-wrapper\", \"rm_elem\":1}, {\"cond\":\".blurFilter\", \"rm_class\":\"blurFilter\"}]",
+    "upd_version": "3.8.9.4"
+  },
+  "McClatchy Group": {
+    "domain": "###_usa_mcc",
+    "group": [
+      "bnd.com",
+      "charlotteobserver.com",
+      "elnuevoherald.com",
+      "fresnobee.com",
+      "kansas.com",
+      "kansascity.com",
+      "kentucky.com",
+      "mcclatchydc.com",
+      "miamiherald.com",
+      "newsobserver.com",
+      "sacbee.com",
+      "star-telegram.com",
+      "thestate.com",
+      "tri-cityherald.com"
+    ],
+    "block_regex": "(\\.amplitude\\.com\\/|\\.mcclatchy\\.com\\/mcc-paywall-new\\.js|cdn\\.ampproject\\.org\\/v\\d\\/amp-(access|subscriptions)-.+\\.js)",
+    "cs_code": "[{\"cond\":\"p#yzwall\", \"rm_elem\":1, \"elems\": [{\"cond\":\".yzfade,.yzarret\", \"rm_attrib\":\"class\"}]}]",
+    "upd_version": "3.8.9.6"
+  },
+  "MIT Sloan Management Review": {
+    "domain": "sloanreview.mit.edu",
+    "allow_cookies": 1,
+    "block_regex": "(\\.tinypass\\.com\\/|\\/sloanreview\\.mit\\.edu\\/.+\\/welcome-ad\\.js)",
+    "cs_block": 1,
+    "upd_version": "3.8.9.2"
+  },
+  "Mundo Deportivo": {
+    "domain": "mundodeportivo.com",
+    "allow_cookies": 1,
+    "block_regex": "\\/ev\\.mundodeportivo\\.com",
+    "upd_version": "3.8.7.7"
+  },
+  "Nation Media Group": {
+    "domain": "###_ke_nation_media",
+    "group": [
+      "businessdailyafrica.com",
+      "nation.africa"
+    ],
+    "allow_cookies": 1,
+    "block_js_inline": "-\\d{6,}",
+    "upd_version": "3.8.8.2"
+  },
+  "Nikkei Asian Review": {
+    "domain": "asia.nikkei.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.piano\\.io",
+    "ld_json_next": "div#paywall-offer|div#article-body-preview>div|",
+    "upd_version": "3.8.7.1"
+  },
+  "NSC Total": {
+    "domain": "nsctotal.com.br",
+    "allow_cookies": 1,
+    "block_regex": "\\.nsctotal\\.com\\.br\\/wp-content\\/themes\\/nsctotal\\/js\\/paywall\\.js",
+    "upd_version": "3.8.8.3"
+  },
+  "Ole.com.ar": {
+    "domain": "ole.com.ar",
+    "allow_cookies": 1,
+    "block_regex": "zonda\\.clarin\\.com",
+    "upd_version": "3.8.8.4"
+  },
+  "The New Statesman": {
+    "domain": "newstatesman.com",
+    "allow_cookies": 1,
+    "block_regex": "\\.piano\\.io",
+    "upd_version": "3.8.7.5"
+  },
+  "The New York Times": {
+    "domain": "nytimes.com",
+    "allow_cookies": 1,
+    "block_regex": "(\\.nytimes\\.com\\/(meter\\.js|svc\\/onsite-messaging\\/query)|mwcm\\.nyt\\.com\\/.+\\.js|cooking\\.nytimes\\.com\\/api\\/.+\\/access)",
+    "useragent": "googlebot",
+    "upd_version": "3.8.7.2"
+  }
+}
